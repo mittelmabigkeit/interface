@@ -12,12 +12,17 @@ class PreBase implements Base{
 
     public $a, $b, $res;
 
-    public function sum($a, $b)
-    {
-        $this->res=$this->a + $this->b;
+    public function __construct ($a,$b){
+        $this -> a = $a;
+        $this -> b = $b;
     }
 
-    public function out($res)
+    public function sum($a, $b)
+    {
+        $this->res=$a+$b;
+    }
+
+    public function out()
     {
         return $this->res;
     }

@@ -10,12 +10,7 @@ require_once 'Base.php';
 
 class PreBase implements Base{
 
-    public $a, $b, $res;
-
-    public function __construct ($a,$b){
-        $this -> a = $a;
-        $this -> b = $b;
-    }
+    public $res;
 
     public function sum($a, $b)
     {

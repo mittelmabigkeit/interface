@@ -8,7 +8,7 @@
 
 require_once 'PreBase.php';
 
-$sum=new PreBase(2,3);
+$sum=new PreBase();
 $sum->sum(2,3);
 echo $sum->out();
 ?>
